@@ -7,7 +7,7 @@
 import cv2
 	
 # path
-path = "/home/kawsar/Desktop/Deep Learning/python-pandas-numpy-matplotlib/OpenCv/geeks14.png"
+path = "/home/kawsar/Desktop/Deep Learning/python-pandas-numpy-matplotlib/OpenCv/geeks14.jpg"
 
 	
 # Reading an image in default mode
