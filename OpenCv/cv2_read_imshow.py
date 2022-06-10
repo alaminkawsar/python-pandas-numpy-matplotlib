@@ -1,18 +1,18 @@
+import cv2 as cv
 import cv2
+import matplotlib.pyplot as plt
 
-path = '/home/kawsar/Desktop/Deep Learning/python-pandas-numpy-matplotlib/OpenCv/geeks14.jpg'
-
-# Using cv2.imread() method
-image = cv2.imread(path)
-
-#gray scale mode
-#image = cv2.imread(path, 0)
+path = '/home/kawsar/Desktop/Deep Learning/python-pandas-numpy-matplotlib/OpenCv/rose.png'
 
 #unchanged
-#image = cv2.imread(path, cv2.IMREAD_UNCHANGED)
+image = cv2.imread(path,cv2.IMREAD_COLOR)
+
+print(image.shape)
+image=image[:,:,:,0]
 
 
 # Displaying the image
-cv2.imshow('image', image)
+#plt.imshow(image)
+#plt.show()
+cv2.imshow('image',image)
 cv2.waitKey(0)
-cv2.destoryAllWindows()
